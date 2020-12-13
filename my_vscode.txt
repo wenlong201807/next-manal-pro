@@ -1,0 +1,121 @@
+{
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "tslint.autoFixOnSave":true,
+  // "editor.formatOnType": true,
+
+  "editor.detectIndentation": false, // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.tabSize": 2, // 重新设定tabsize
+  "editor.fontSize": 19,
+  // "editor.formatOnSave": true, // #每次保存的时候自动格式化 // 同时会加上分号，双引号//可恶至极
+  // "editor.formatOnPaste" :true,
+  // "eslint.autoFixOnSave": true, // #每次保存的时候将代码按eslint格式进行修复
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  // prettier 设置语句末尾加分号 true 加分号 false 不加分好
+  "prettier.semi": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // "files.autoSaveDelay": 2000,
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascript"
+  },
+  // #让prettier使用eslint的代码格式进行校验
+  "prettier-eslint.eslintIntegration": true,
+  // #使用带引号替代双引号
+  "prettier.singleQuote": true,
+  // "vetur.format.defaultFormatter.js": "vscode-typescript", // 解决函数名前面没有空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // #让函数(名)和后面的括号之间加个空格
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_line_length": 160,
+      "wrap_attributes": "auto",
+      // #vue组件中html代码格式化样式
+      "end_with_newline": false
+    },
+    "prettier": {
+      "semi": false, // 格式化不加分号
+      "singleQuote": true, // 格式化为单引号
+      "arrowParens": "avoid" // (x) => {} 是否要有小括号
+    }
+  },
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.js": "prettier",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    // "go",
+    // "vue",
+    "react",
+    "html",
+    "css",
+    "less",
+    "scss",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    // {
+    //   "language": "go",
+    //   "autoFix": true
+    // },
+    {
+      "language": "react",
+      "autoFix": true
+    },
+    {
+      "language": "css",
+      "autoFix": true
+    },
+    {
+      "language": "less",
+      "autoFix": true
+    },
+    {
+      "language": "scss",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "code-runner.runInTerminal": true,
+  "go.goroot": "",
+  "go.gopath": "",
+  "go.inferGopath": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.gocodePackageLookupMode": "go",
+  "go.gotoSymbol.includeImports": true,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+  "go.docsTool": "gogetdoc",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "fileheader.Author": "wenlongZhu",
+  "fileheader.LastModifiedBy": "wenlongZhu",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[typescript]": {
+    "editor.defaultFormatter": "mblode.pretty-formatter"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "mblode.pretty-formatter"
+  },
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.tsx": "javascriptreact"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "mblode.pretty-formatter"
+  },
+  "files.autoSave": "afterDelay"
+}

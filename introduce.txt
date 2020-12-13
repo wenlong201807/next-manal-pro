@@ -1,0 +1,22 @@
+服务器作用：
+1.nextjs自身带有服务器，只处理ssr渲染
+2.处理http请求，并且根据请求数据返回响应的内容
+3.根据域名之类的host来定位服务器
+
+nextjs无法处理服务端
+1.数据接口
+2.数据库连接
+3.session状态
+
+koa作用：
+1.流行的轻量级nodejs服务端框架
+2.项目相对轻量，并不需要很多集成的功能
+3.易于扩展，编程模式非常符合js特性
+
+koa特点：
+https://koajs.com/#context  官网查看
+1.轻量：本身不封装什么功能
+2.api  ： app.use   
+
+redis安装：稳定版本3.0.504
+https://github.com/MicrosoftArchive/redis/releases
